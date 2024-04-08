@@ -1,0 +1,42 @@
+#logo {
+    width: 200px;
+    height: 80px;
+    margin-bottom: 300px;
+}
+#sign_in {
+  width: 140px;
+  height: 50px;
+  background-color: red;
+  color: white;
+  float: right ;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+h1, h3{
+  text-align: center;
+  color: white;
+}
+.get_started {
+    width: 140px;
+    height: 50px;
+    background-color: red;
+    color: white;
+}
+#home_page { 
+    background-image: url(https://miro.medium.com/v2/resize:fit:1400/0*2Q-LvdD309qDWxK5.jpg);
+}
+#content {
+    background-color: black;
+    display: flexbox;
+    justify-content: center;
+}
+.email {
+    width: 400px;
+    height: 50px;
+    
+}
+.conatiner {
+    display:flex;
+    justify-content: center;
+}
