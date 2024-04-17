@@ -1,40 +1,63 @@
-let todo = JSON.parse(localStorage.getItem("todo")) || [];
-const todoInput = document.getElementById('input');
-const todolist = document.getElementById('tasks')
-const del = document.getElementById('delete');
-const add = document.getElementById('add');
+const input = document.getElementById('input')
+const add = document.getElementById('add')
+const del = document.getElementById('delete')
+const count = document.getElementById('count')
+const tasks = document.getElementById('tasks')
 
+let counter = 0
 
-document.addEventListener("DOMContentLoaded", function(){
-    add.addEventListener('click', addtask);
-    input.addEventListener('keydown', function(event){
-        if (event.key == "Enter"){
-            event.preventDefault();
-            addtask();
+add.addEventListener('click', addTask)
+input.addEventListener('keyup', (e)=>{
+    if(e.key === 'Enter'){
+        addTask()
+    }
+})
+del.addEventListener('click', deleteAll)
+tasks.addEventListener('change', (e)=>{
+    if(e.target.tagName === 'INPUT' && e.target.type === 'checkbox'){
+        const checkbox = e.target
+        const item = checkbox.parentNode
+
+        if(checkbox.checked){
+            item.classList.add('completed')
+            counter --
+            count.innerText = counter
+        } else {
+            item.classList.remove('completed')
+            counter ++
+            count.innerText = counter
         }
-    });
-    del.addEventListener('click',deleteAllTasks);
-    displayTasks();
+    }
 })
 
-function addtask(){
-    const newTask  = todoInput.value.trim();//remove un neccsesary
-    if (newTask !== ""){
-        todo.push({
-            text: newTask, disabled: false
-        });
-        saveToLocalStorage();
-        todoInput.value = ''
-        displayTasks();
+function addTask(){
+    const newTask = input.value.trim()
+    if (newTask !== ''){
+
+        const newElement = document.createElement('li')
+        const check = document.createElement('input')
+        check.type = 'checkbox'
+        const label = document.createElement('label')
+        label.textContent = newTask
+
+        newElement.appendChild(check)
+        newElement.appendChild(label)
+        newElement.classList.add('task')
+        tasks.appendChild(newElement)
+
+        input.value = ''
+        counter ++
+        count.innerText = counter
     }
 }
-function deleteAllTasks(){
-    //ab
-}
-function displayTasks(){
-    todolist.innerHTML="";
+
+function deleteAll(){
+    while(tasks.firstChild){
+        tasks.removeChild(tasks.firstChild)
+        counter --
+    }
+    count.innerText = counter
     
 }
-function saveToLocalStorage(){
-    localStorage.setItem('todo', JSON.stringify(todo));
-}
+
+
