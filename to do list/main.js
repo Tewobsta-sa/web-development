@@ -1,3 +1,4 @@
+let todo = JSON.parse(localStorage.getItem("todo")) || []
 const input = document.getElementById('input')
 const add = document.getElementById('add')
 const del = document.getElementById('delete')
@@ -30,6 +31,7 @@ tasks.addEventListener('change', (e)=>{
     }
 })
 
+
 function addTask(){
     const newTask = input.value.trim()
     if (newTask !== ''){
@@ -48,7 +50,10 @@ function addTask(){
         input.value = ''
         counter ++
         count.innerText = counter
+        let stored = JSON.stringify(newTask)
+        localStorage.setItem("My Tasks", stored)
     }
+
 }
 
 function deleteAll(){
