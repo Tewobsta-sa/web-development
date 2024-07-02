@@ -1,0 +1,23 @@
+* {
+    text-align: center;
+    background-color: rgb(187, 230, 231);
+}
+#welcome {
+    padding-top: 200px;
+}
+#username{
+    margin-top: 30px;
+    margin-right: 50px;
+    font-size: medium;
+    
+}
+#enter{
+    background-color:aquamarine;
+    border-color:aliceblue;
+    border-radius: 5%;
+    size: 50px;
+    margin-top: 60px;
+    padding: 10px;
+    font-size: 20px;
+    width: 90px;
+}
