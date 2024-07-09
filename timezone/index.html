@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="whole">
+        <div class="time-zone">
+            <div class="con">
+                <p id="time-zone-name"></p>
+                <button data-modal-target="#modal" id="open">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                </button>
+            </div>
+            <div class="modal-container" id="modal">
+                <div class="modal-header">
+                    <div>Change Timezone</div>
+                </div>
+                <div class="modal-body">
+                    <div class="dropdown">
+                        <select name="select-timezone" id="select">
+                            <option value="1">Pick Timezone</option>
+                        </select>
+                    </div>
+                    <button data-close-button class="apply" id="close">Apply</button>
+                </div>
+            </div>
+            <div id="overlay"></div>
+        </div>
+        <p class="time"></p>
+        <p class="date"></p>
+    </div>   
+    <script src="bundle.js"></script>
+</body>
+</html>
