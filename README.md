@@ -1,2 +1,7 @@
-This is my first web site to work by my self. Actually i didnt create the stylings and the whole idea my work was just cloning the website.
-for anyone who wants to start web development after learning html and css beaics and some js immediately start cloning webstites.
+I began my journey as a full-stack web developer by learning the basics through FreeCodeCamp's website. After mastering the fundamentals, I took a significant step forward by cloning existing websites. This practice greatly increased my skills and confidence.
+Encouraged by this progress, I then started creating my own projects. During this phase, the following resources were particularly helpful and I recommend them to you as well:
+
+https://www.youtube.com/@TraversyMedia
+https://www.freecodecamp.org/
+https://www.youtube.com/@freecodecamp
+
