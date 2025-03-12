@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form>
+        <label for="fullName">Full Name:<span style="color: rgb(248, 8, 8);">*</span></label>
+        <input type="text" id="fullName" required><br>
+<br>
+        <label for="phone">Phone:<span style="color: rgb(248, 8, 8);">*</span></label>
+        <input type="tel" id="phone" required><br>
+        <br>
+        <label for="age">Age:<span style="color: rgb(248, 8, 8);">*</span></label>
+        <input type="number" id="age" required><br>
+        <br>
+        <label for="favoriteColor">Your Favorite Color:</label>
+        <input type="color" id="favoriteColor" value="#008000"><br>
+        <br>
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate"><br>
+        <br>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <br>
+        <label for="Password">Enter Password:<span style="color: rgb(248, 8, 8);">*</span></label>
+        <input type="password" id="Password" required><br>
+        <br>
+        <label for="confirmPassword">Confirm Password:<span style="color: rgb(248, 8, 8);">*</span></label>
+        <input type="password" id="confirmPassword" required><br>
+        <br>
+        <label>Skills:</label><br>
+        <input type="checkbox" id="html" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="css" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="javascript" value="JavaScript">
+        <label for="javascript">JavaScript</label><br>
+        <input type="checkbox" id="php" value="PHP">
+        <label for="php">PHP</label><br>
+        <br>
+        <label for="country">Country:</label>
+        <select id="country">
+            <option value="Ethiopia">Ethiopia</option>
+            <!-- Add other countries as needed -->
+        </select><br>
+        <br>
+        <label for="photo">Photo:</label>
+        <input type="file" id="photo"><br>
+        <br>
+        <textarea id="description" placeholder="Describe Yourself"></textarea><br>
+        <br>
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+
+        <p>Follow Us On: <a href="#">Facebook</a> | <a href="#">Twitter</a> </p>
+    </form>
+</body>
+</html>
