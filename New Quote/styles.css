@@ -11,7 +11,7 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
-    background: url('https://media.istockphoto.com/id/1129874863/photo/books-on-display-in-the-corner-of-a-second-hand-bookstore.jpg?s=612x612&w=0&k=20&c=ez0PTZuEp8Vn5SFMSxOVggudvgsHFKsFKlAwObaXkuI=') no-repeat center center/ cover;
+    background: url('backgroun.jpg') no-repeat center center/ cover;
 }
 .container {
     width: 550px;
